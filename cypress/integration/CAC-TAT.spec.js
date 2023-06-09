@@ -195,7 +195,7 @@ describe('Preenche os campos obrigatórios e envia o formulário', function() {
                 expect(response.body).to.include('CAC TAT')
             })
         })
-        it.only('encontrando o gato', function(){
+        it('encontrando o gato', function(){
             cy.get('#cat')
                 .should('not.be.visible')
                 .invoke('show')
